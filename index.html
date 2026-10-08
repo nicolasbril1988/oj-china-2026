@@ -673,12 +673,12 @@ body.locked{overflow:hidden}
         <div class="what">
           <div class="city"><h3>Shanghái</h3><span class="chip">Recorrido por la ciudad</span></div>
           <ul class="items">
-            <li><span class="t">Mañana</span><span class="x">Jardín Yu (Yuyuan)</span></li>
-            <li><span class="t">Almuerzo</span><span class="x">Fideos con huevas de cangrejo (蟹黄面), especialidad local</span></li>
-            <li><span class="t">Tarde</span><span class="x">West Bund Dome Art Center</span></li>
-            <li><span class="t">Caminata</span><span class="x">Templo Jing'an → HKRI Taikoo Hui → Minisoland</span></li>
-            <li><span class="t">Cena</span><span class="x">Cocina de Shanghái</span></li>
-            <li><span class="t">Noche</span><span class="x">Crucero nocturno con vista al Bund</span></li>
+            <li><span class="t mono">09:30</span><span class="x">Jardín Yu (Yuyuan)</span></li>
+            <li><span class="t mono">12:00</span><span class="x">Almuerzo: fideos con huevas de cangrejo (蟹黄面), especialidad local</span></li>
+            <li><span class="t mono">14:00</span><span class="x">West Bund Dome Art Center</span></li>
+            <li><span class="t mono">15:30</span><span class="x">Caminata: Templo Jing'an → HKRI Taikoo Hui → Minisoland</span></li>
+            <li><span class="t mono">18:30</span><span class="x">Cena: cocina de Shanghái</span></li>
+            <li><span class="t mono">20:00</span><span class="x">Crucero nocturno por el río Huangpu, con vista al Bund y Lujiazui</span></li>
           </ul>
         </div>
       </div>
@@ -1061,7 +1061,7 @@ body.locked{overflow:hidden}
 
   // Section router: one section per screen
   document.documentElement.classList.add('js');
-  var order=['vuelos','traslados','agenda','hoteles','contactos','checklist','guia'];
+  var order=['vuelos','traslados','agenda','hoteles','contactos','checklist','guia'].filter(function(id){return document.getElementById(id);});
   var names={vuelos:'Vuelos',traslados:'Traslados',agenda:'Agenda',hoteles:'Hoteles',contactos:'Contactos',checklist:'Checklist',guia:'Guía práctica'};
   var views=[].slice.call(document.querySelectorAll('.view'));
   order.forEach(function(id,i){
