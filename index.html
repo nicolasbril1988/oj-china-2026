@@ -389,7 +389,6 @@ body.locked{overflow:hidden}
     </div>
     <ol class="menu-list">
       <li><a href="#top"><span class="mn mono">00</span><span><b>Inicio</b><small>Resumen y hora en China</small></span></a></li>
-      <li><a href="#novedades"><span class="mn mono">★</span><span><b>Novedades</b><small>Cambios y confirmaciones</small></span></a></li>
       <li><a href="#vuelos"><span class="mn mono">01</span><span><b>Vuelos</b><small>Ida 14 oct · regreso 28 oct</small></span></a></li>
       <li><a href="#traslados"><span class="mn mono">02</span><span><b>Traslados</b><small>Ezeiza, aeropuertos y trenes</small></span></a></li>
       <li><a href="#agenda"><span class="mn mono">03</span><span><b>Agenda</b><small>Día por día, del 14 al 28</small></span></a></li>
@@ -412,11 +411,6 @@ body.locked{overflow:hidden}
     <p class="eyebrow">Omoda &amp; Jaecoo Argentina · User Summit 2026</p>
     <h1>China<br><span>Octubre 2026</span></h1>
     <p class="lede">Todo el viaje a Shanghái y Wuhu en un solo lugar. Elija una sección para ver el detalle.</p>
-    <a class="news-home" href="#novedades">
-      <span class="nh-top"><span class="nh-label">Novedades</span><span class="nh-date mono" id="nhDate"></span></span>
-      <span class="nh-title" id="nhTitle"></span>
-      <span class="nh-more">Ver todas las novedades →</span>
-    </a>
     <nav class="tiles" aria-label="Secciones del viaje">
       <a class="tile wide" href="#agenda"><span class="tn mono">03</span><span class="tt">Agenda</span><span class="td">Día por día, del 14 al 28 de octubre</span><span class="tg">Infinity Night · Test drive · Conferencia</span></a>
       <a class="tile" href="#vuelos"><span class="tn mono">01</span><span class="tt">Vuelos</span><span class="td">KLM ida · Emirates y Gol vuelta</span></a>
@@ -440,35 +434,6 @@ body.locked{overflow:hidden}
 
 <main>
 
-<section class="s view" id="novedades">
-  <div class="wrap">
-    <div class="s-head">
-      <p class="eyebrow">Novedades</p>
-      <h2>Últimas novedades</h2>
-      <p>Cada cambio o confirmación del viaje se publica acá, primero lo más reciente. También le avisamos por el grupo de WeChat.</p>
-    </div>
-    <div class="news" id="newsList">
-      <!-- NOVEDADES: agregar arriba la más nueva -->
-      <article class="news-item">
-        <time class="mono" datetime="2026-10-07">Mié 7 oct</time>
-        <h3>Hoteles confirmados</h3>
-        <p>En Shanghái nos alojamos en el Grand Kempinski Hotel Shanghai, en Lujiazui, y en Wuhu en el Huaqi Hotel Wuhu. Las direcciones, con versión en chino para el taxi, están en la sección Hoteles.</p>
-        <a href="#hoteles">Ver hoteles →</a>
-      </article>
-      <article class="news-item">
-        <time class="mono" datetime="2026-10-07">Mié 7 oct</time>
-        <h3>Compre su eSIM antes de viajar</h3>
-        <p>Recomendamos comprar una eSIM con datos ilimitados para China antes del 14 de octubre e instalarla en Argentina. En la guía práctica están las opciones y los precios aproximados.</p>
-        <a href="#esim">Ver opciones de eSIM →</a>
-      </article>
-      <article class="news-item">
-        <time class="mono" datetime="2026-10-07">Mié 7 oct</time>
-        <h3>Publicamos la guía del viaje</h3>
-        <p>Acá va a encontrar vuelos, traslados, agenda, contactos y toda la información práctica. Los hoteles se confirman en breve y los vamos a anunciar en esta sección.</p>
-      </article>
-    </div>
-  </div>
-</section>
 
 <section class="s view" id="vuelos">
   <div class="wrap">
@@ -481,7 +446,7 @@ body.locked{overflow:hidden}
     <div class="leg-title"><h3>Ida a Shanghái</h3><span>Mié 14 oct → Vie 16 oct</span></div>
     <div class="flights">
       <article class="flight">
-        <div class="stub"><span class="num">KL 702</span><small>KLM · Mié 14 oct · Boeing 777-200</small></div>
+        <div class="stub"><span class="num">KL 702</span><small>KLM · Mié 14 oct · Boeing 777-200<span class="cls"> · Clase Business</span></small></div>
         <div class="main">
           <div class="ap"><span class="code">EZE</span><span class="time">15:05</span><small>Buenos Aires, Ezeiza</small></div>
           <div class="dur"><svg viewBox="0 0 88 14" aria-hidden="true"><line x1="2" y1="7" x2="80" y2="7" stroke="currentColor" stroke-dasharray="3 3"/><path d="M80 3 L86 7 L80 11 Z" fill="currentColor"/></svg>13 h 05</div>
@@ -490,7 +455,7 @@ body.locked{overflow:hidden}
       </article>
       <p class="layover">Escala en Ámsterdam: 6 h 00</p>
       <article class="flight">
-        <div class="stub"><span class="num">KL 895</span><small>KLM · Jue 15 oct · Boeing 787-9</small></div>
+        <div class="stub"><span class="num">KL 895</span><small>KLM · Jue 15 oct · Boeing 787-9<span class="cls"> · Clase Business</span></small></div>
         <div class="main">
           <div class="ap"><span class="code">AMS</span><span class="time">15:10</span><small>Ámsterdam, Schiphol</small></div>
           <div class="dur"><svg viewBox="0 0 88 14" aria-hidden="true"><line x1="2" y1="7" x2="80" y2="7" stroke="currentColor" stroke-dasharray="3 3"/><path d="M80 3 L86 7 L80 11 Z" fill="currentColor"/></svg>12 h 15</div>
@@ -502,7 +467,7 @@ body.locked{overflow:hidden}
     <div class="leg-title"><h3>Regreso a Buenos Aires</h3><span>Lun 26 oct → Mié 28 oct</span></div>
     <div class="flights">
       <article class="flight">
-        <div class="stub"><span class="num">EK 303</span><small>Emirates · Lun 26 oct · Airbus A380</small></div>
+        <div class="stub"><span class="num">EK 303</span><small>Emirates · Lun 26 oct · Airbus A380<span class="cls"> · Clase Económica</span></small></div>
         <div class="main">
           <div class="ap"><span class="code">PVG</span><span class="time">23:00</span><small>Shanghái, Pudong · Terminal 2</small></div>
           <div class="dur"><svg viewBox="0 0 88 14" aria-hidden="true"><line x1="2" y1="7" x2="80" y2="7" stroke="currentColor" stroke-dasharray="3 3"/><path d="M80 3 L86 7 L80 11 Z" fill="currentColor"/></svg>10 h 10</div>
@@ -511,7 +476,7 @@ body.locked{overflow:hidden}
       </article>
       <p class="layover">Escala en Dubái: 3 h 55</p>
       <article class="flight">
-        <div class="stub"><span class="num">EK 261</span><small>Emirates · Mar 27 oct · Airbus A380</small></div>
+        <div class="stub"><span class="num">EK 261</span><small>Emirates · Mar 27 oct · Airbus A380<span class="cls"> · Clase Premium Economy</span></small></div>
         <div class="main">
           <div class="ap"><span class="code">DXB</span><span class="time">09:05</span><small>Dubái · Terminal 3</small></div>
           <div class="dur"><svg viewBox="0 0 88 14" aria-hidden="true"><line x1="2" y1="7" x2="80" y2="7" stroke="currentColor" stroke-dasharray="3 3"/><path d="M80 3 L86 7 L80 11 Z" fill="currentColor"/></svg>15 h 30</div>
@@ -520,7 +485,7 @@ body.locked{overflow:hidden}
       </article>
       <p class="layover">Escala en São Paulo: 5 h 05, con cambio de terminal (T3 a T2)</p>
       <article class="flight">
-        <div class="stub"><span class="num">G3 7648</span><small>Gol · Mar 27 oct · Boeing 737 MAX 8</small></div>
+        <div class="stub"><span class="num">G3 7648</span><small>Gol · Mar 27 oct · Boeing 737 MAX 8<span class="cls"> · Clase Premium Economy</span></small></div>
         <div class="main">
           <div class="ap"><span class="code">GRU</span><span class="time">22:40</span><small>São Paulo, Guarulhos · Terminal 2</small></div>
           <div class="dur"><svg viewBox="0 0 88 14" aria-hidden="true"><line x1="2" y1="7" x2="80" y2="7" stroke="currentColor" stroke-dasharray="3 3"/><path d="M80 3 L86 7 L80 11 Z" fill="currentColor"/></svg>3 h 00</div>
@@ -782,7 +747,7 @@ body.locked{overflow:hidden}
     </div>
     <div class="stays">
       <div class="stay"><span class="c">Shanghái</span><span class="n">16 → 19 oct y 24 → 26 oct · 5 noches</span><span class="h">Grand Kempinski Hotel Shanghai</span><div class="gal"><img src="https://storage.kempinski.com/cdn-cgi/image/w=800,f=auto,fit=scale-down,g=auto/ki-cms-prod/images/4/1/1/5/18135114-2-eng-GB/89370953fd10-84105119_4K.jpg" alt="Habitación con vista a Lujiazui" loading="lazy" decoding="async"><img src="https://storage.kempinski.com/cdn-cgi/image/w=800,f=auto,fit=scale-down,g=auto/ki-cms-prod/images/4/7/2/5/18135274-2-eng-GB/760103b94dde-84105127_4K.jpg" alt="Habitación" loading="lazy" decoding="async"><img src="https://storage.kempinski.com/cdn-cgi/image/w=800,f=auto,fit=scale-down,g=auto/ki-cms-prod/images/1/4/3/4/544341-1-eng-GB/04968536da4d-74593510_4K.jpg" alt="Spa con vista al río" loading="lazy" decoding="async"></div><span class="credit">Fotos: Kempinski</span><ul class="hinfo"><li>Hotel cinco estrellas en Lujiazui, el distrito financiero de Pudong. <a href="https://www.kempinski.com/en/grand-kempinski-hotel-shanghai" target="_blank" rel="noopener">Web del hotel</a>.</li><li>A 8 minutos a pie del metro Lujiazui (línea 2).</li><li>A unos 40 km del aeropuerto de Pudong.</li></ul><div class="addr"><span class="al">Teléfono del hotel</span><span class="av mono">+86 21 3867 8888</span><button class="copy" type="button" data-copy="+862138678888">Copiar</button></div><div class="addr"><span class="al">Dirección</span><span class="av" id="a1">1288 Lujiazui Ring Road, Pudong New Area, Shanghai 200120, China</span><button class="copy" type="button" data-copy="1288 Lujiazui Ring Road, Pudong New Area, Shanghai 200120, China">Copiar</button></div><div class="addr"><span class="al">Para mostrar al taxista</span><span class="av" id="a2">上海凯宾斯基大酒店，上海市浦东新区陆家嘴环路1288号</span><button class="copy" type="button" data-copy="上海凯宾斯基大酒店，上海市浦东新区陆家嘴环路1288号">Copiar</button></div></div>
-      <div class="stay"><span class="c">Wuhu</span><span class="n">19 → 24 oct · 5 noches</span><span class="h">Huaqi Hotel Wuhu</span><div class="gal"><img src="https://ak-d.tripcdn.com/images/1mc5b12000tt9wxsr0494_R_800_533_R5_D.jpg" alt="Fachada del hotel" loading="lazy" decoding="async"><img src="https://ak-d.tripcdn.com/images/1mc1w12000tujrkxvCF73_R_800_533_R5_D.jpg" alt="Lobby" loading="lazy" decoding="async"><img src="https://ak-d.tripcdn.com/images/0205712000tsv30z4B115_R_800_533_R5_D.jpg" alt="Lounge" loading="lazy" decoding="async"></div><span class="credit">Fotos: Trip.com</span><ul class="hinfo"><li>Hotel nuevo, inaugurado en 2026, sobre la calle Zhongshan.</li><li>Habitaciones con vista al río, gimnasio y lavandería sin cargo.</li><li>A 1,1 km del metro Jiuzi Square.</li><li>En Trip.com figura como Wuhu Huaxi Grand Hotel: <a href="https://es.trip.com/hotels/w/detail/?cityid=478&amp;hotelid=135875121" target="_blank" rel="noopener">ver fotos y detalles</a>.</li><li>La noche del 21 se duerme en ruta, durante el test drive.</li></ul><div class="addr"><span class="al">Dirección</span><span class="av" id="a3">No.1 Zhongshan Road, Jinghu District, Wuhu City, Anhui Province, P.R.China</span><button class="copy" type="button" data-copy="No.1 Zhongshan Road, Jinghu District, Wuhu City, Anhui Province, P.R.China">Copiar</button></div><div class="addr"><span class="al">Para mostrar al taxista</span><span class="av" id="a4">芜湖华栖大酒店，安徽省芜湖市镜湖区中山路1号</span><button class="copy" type="button" data-copy="芜湖华栖大酒店，安徽省芜湖市镜湖区中山路1号">Copiar</button></div></div>
+      <div class="stay"><span class="c">Wuhu</span><span class="n">19 → 24 oct · 4 noches en el hotel</span><span class="h">Huaqi Hotel Wuhu</span><div class="gal"><img src="https://ak-d.tripcdn.com/images/1mc5b12000tt9wxsr0494_R_800_533_R5_D.jpg" alt="Fachada del hotel" loading="lazy" decoding="async"><img src="https://ak-d.tripcdn.com/images/1mc1w12000tujrkxvCF73_R_800_533_R5_D.jpg" alt="Lobby" loading="lazy" decoding="async"><img src="https://ak-d.tripcdn.com/images/0205712000tsv30z4B115_R_800_533_R5_D.jpg" alt="Lounge" loading="lazy" decoding="async"></div><span class="credit">Fotos: Trip.com</span><ul class="hinfo"><li>Hotel nuevo, inaugurado en 2026, sobre la calle Zhongshan.</li><li>Habitaciones con vista al río, gimnasio y lavandería sin cargo.</li><li>A 1,1 km del metro Jiuzi Square.</li><li>En Trip.com figura como Wuhu Huaxi Grand Hotel: <a href="https://es.trip.com/hotels/w/detail/?cityid=478&amp;hotelid=135875121" target="_blank" rel="noopener">ver fotos y detalles</a>.</li><li>La noche del 21 se duerme en ruta, durante el test drive.</li></ul><div class="addr"><span class="al">Dirección</span><span class="av" id="a3">No.1 Zhongshan Road, Jinghu District, Wuhu City, Anhui Province, P.R.China</span><button class="copy" type="button" data-copy="No.1 Zhongshan Road, Jinghu District, Wuhu City, Anhui Province, P.R.China">Copiar</button></div><div class="addr"><span class="al">Para mostrar al taxista</span><span class="av" id="a4">芜湖华栖大酒店，安徽省芜湖市镜湖区中山路1号</span><button class="copy" type="button" data-copy="芜湖华栖大酒店，安徽省芜湖市镜湖区中山路1号">Copiar</button></div></div>
     </div>
   </div>
 </section>
@@ -1056,7 +1021,7 @@ body.locked{overflow:hidden}
   // Latest news on home
   var first=document.querySelector('#newsList .news-item');
   if(first){document.getElementById('nhDate').textContent=first.querySelector('time').textContent;document.getElementById('nhTitle').textContent=first.querySelector('h3').textContent;}
-  (function(){var w=document.querySelector('#novedades .wrap');var bar=document.createElement('div');bar.className='secbar';bar.innerHTML='<a class="back" href="#top">← Inicio</a>';w.insertBefore(bar,w.firstChild);
+  (function(){var w=document.querySelector('#novedades .wrap');if(!w)return;var bar=document.createElement('div');bar.className='secbar';bar.innerHTML='<a class="back" href="#top">← Inicio</a>';w.insertBefore(bar,w.firstChild);
     var nav=document.createElement('div');nav.className='secnav';nav.innerHTML='<a class="next" href="#vuelos"><small>Empezar el recorrido</small><b>Vuelos →</b></a>';w.appendChild(nav);})();
   var foot=document.querySelector('footer');
   function route(){
