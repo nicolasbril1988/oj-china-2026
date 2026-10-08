@@ -178,6 +178,12 @@ footer .brand{color:var(--muted)}
 .print-only{display:none}
 .lang{margin-left:auto;font-size:13px;font-weight:700;letter-spacing:.08em;color:var(--fg);text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:8px 12px}.lang:focus-visible{outline:2px solid var(--accent)}.lang+.menu-btn{margin-left:8px}
 .hq-note{display:grid;gap:4px;padding:14px 16px;border-radius:12px;background:var(--surface-2);border:1px solid color-mix(in srgb,var(--accent) 45%,var(--line));font-size:15px}.hq-note b{color:var(--accent);font-size:12px;letter-spacing:.12em;text-transform:uppercase}
+.stay .h{font-size:18px;font-weight:600}
+.addr{display:grid;grid-template-columns:1fr auto;gap:2px 10px;align-items:center;background:var(--surface-2);border:1px solid var(--line);border-radius:8px;padding:10px 10px 10px 12px;margin-top:4px}
+.addr .al{grid-column:1 / -1;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--faint)}
+.addr .av{font-size:15px;line-height:1.4;min-width:0;user-select:all}
+.addr .copy{align-self:start}
+
 .news-home{display:grid;gap:6px;padding:16px 18px;margin-bottom:10px;border-radius:14px;background:var(--surface);border:1px solid color-mix(in srgb,var(--pending) 45%,var(--line));color:var(--fg);text-decoration:none}
 .news-home:focus-visible{outline:2px solid var(--accent)}
 .nh-top{display:flex;justify-content:space-between;align-items:center;gap:8px}
@@ -409,7 +415,7 @@ body.locked{overflow:hidden}
       <a class="tile wide" href="#agenda"><span class="tn mono">03</span><span class="tt">Agenda</span><span class="td">Day by day, 14 to 28 October</span><span class="tg">Infinity Night · Test drive · Conference</span></a>
       <a class="tile" href="#vuelos"><span class="tn mono">01</span><span class="tt">Flights</span><span class="td">KLM out · Emirates and Gol back</span></a>
       <a class="tile" href="#traslados"><span class="tn mono">02</span><span class="tt">Transfers</span><span class="td">Ezeiza, trains and airports</span></a>
-      <a class="tile" href="#hoteles"><span class="tn mono">04</span><span class="tt">Hotels</span><span class="td">Shanghai and Wuhu</span><span class="pending">To be confirmed soon</span></a>
+      <a class="tile" href="#hoteles"><span class="tn mono">04</span><span class="tt">Hotels</span><span class="td">Grand Kempinski Shanghai · Huaqi Wuhu</span><span class="tg">Confirmed</span></a>
       <a class="tile" href="#contactos"><span class="tn mono">05</span><span class="tt">Contacts</span><span class="td">Team phone numbers</span></a>
       <a class="tile" href="#checklist"><span class="tn mono">06</span><span class="tt">Checklist</span><span class="td">Before leaving</span><span class="tg mono" id="tileProg"></span></a>
       <a class="tile" href="#guia"><span class="tn mono">07</span><span class="tt">Practical guide</span><span class="td">eSIM, payments, weather and more</span></a>
@@ -437,6 +443,12 @@ body.locked{overflow:hidden}
     </div>
     <div class="news" id="newsList">
       <!-- NOVEDADES: agregar arriba la más nueva -->
+      <article class="news-item">
+        <time class="mono" datetime="2026-10-07">Wed 7 Oct</time>
+        <h3>Hotels confirmed</h3>
+        <p>In Shanghai we stay at the Grand Kempinski Hotel Shanghai in Lujiazui, and in Wuhu at the Huaqi Hotel Wuhu. Addresses, with a Chinese version for taxis, are in the Hotels section.</p>
+        <a href="#hoteles">See hotels →</a>
+      </article>
       <article class="news-item">
         <time class="mono" datetime="2026-10-07">Wed 7 Oct</time>
         <h3>Buy your eSIM before the trip</h3>
@@ -545,7 +557,7 @@ body.locked{overflow:hidden}
           <li><span class="mono">10:45</span><span>Leave the airport, after immigration and baggage<span class="est">Estimate</span></span></li>
           <li><span class="mono">11:45</span><span>Arrival at the hotel<span class="est">Estimate</span></span></li>
         </ul>
-        <p class="tot">Pudong is about 30 km from downtown: 50 minutes by car. Transfer organised by O&amp;J.</p>
+        <p class="tot">The hotel is in Lujiazui, about 40 km from Pudong: around 40 minutes without traffic, according to the hotel. Transfer organised by O&amp;J.</p>
       </article>
       <article class="leg">
         <div><h3>Shanghai → Wuhu by train</h3><p class="when2">Mon 19 Oct</p></div>
@@ -574,7 +586,7 @@ body.locked{overflow:hidden}
           <li><span class="mono">20:00</span><span>Arrive at Pudong, Terminal 2, three hours before the flight</span></li>
           <li><span class="mono">23:00</span><span>Take off</span></li>
         </ul>
-        <p class="tot">From downtown Shanghai: about 50 minutes by car, plus a margin for traffic. If the hotel is in the Hongqiao area, the ride is longer. We will adjust this once the hotel is confirmed.</p>
+        <p class="tot">From the Grand Kempinski in Lujiazui: about 40 km and 40 minutes without traffic, according to the hotel. We leave with a margin for evening traffic.</p>
       </article>
       <article class="leg">
         <div><h3>Aeroparque → your home</h3><p class="when2">Wed 28 Oct · G3 7648 lands at 01:40</p></div>
@@ -763,9 +775,8 @@ body.locked{overflow:hidden}
       <h2>Where we stay</h2>
     </div>
     <div class="stays">
-      <div class="stay"><span class="c">Shanghai</span><span class="n">16 → 19 Oct · 3 nights</span><span class="h"><span class="pending">To be confirmed soon</span></span></div>
-      <div class="stay"><span class="c">Wuhu</span><span class="n">19 → 24 Oct · 5 nights</span><span class="h"><span class="pending">To be confirmed soon</span></span><span class="sn">The night of the 21st is spent on the route, during the test drive.</span></div>
-      <div class="stay"><span class="c">Shanghai</span><span class="n">24 → 26 Oct · 2 nights</span><span class="h"><span class="pending">To be confirmed soon</span></span></div>
+      <div class="stay"><span class="c">Shanghai</span><span class="n">16 → 19 Oct and 24 → 26 Oct · 5 nights</span><span class="h">Grand Kempinski Hotel Shanghai</span><span class="sn">Lujiazui, Pudong. About 40 km from Pudong airport.</span><div class="addr"><span class="al">Address</span><span class="av" id="a1">1288 Lujiazui Ring Road, Pudong New Area, Shanghai 200120, China</span><button class="copy" type="button" data-copy="1288 Lujiazui Ring Road, Pudong New Area, Shanghai 200120, China">Copy</button></div><div class="addr"><span class="al">Show this to the taxi driver</span><span class="av" id="a2">上海凯宾斯基大酒店，上海市浦东新区陆家嘴环路1288号</span><button class="copy" type="button" data-copy="上海凯宾斯基大酒店，上海市浦东新区陆家嘴环路1288号">Copy</button></div></div>
+      <div class="stay"><span class="c">Wuhu</span><span class="n">19 → 24 Oct · 5 nights</span><span class="h">Huaqi Hotel Wuhu</span><span class="sn">The night of the 21st is spent on the route, during the test drive.</span><div class="addr"><span class="al">Address</span><span class="av" id="a3">No.1 Zhongshan Road, Jinghu District, Wuhu City, Anhui Province, P.R.China</span><button class="copy" type="button" data-copy="No.1 Zhongshan Road, Jinghu District, Wuhu City, Anhui Province, P.R.China">Copy</button></div><div class="addr"><span class="al">Show this to the taxi driver</span><span class="av"><span class="pending">Chinese address to be confirmed</span></span></div></div>
     </div>
   </div>
 </section>
@@ -987,7 +998,7 @@ body.locked{overflow:hidden}
     btn.addEventListener('click',function(){
       var v=btn.getAttribute('data-copy');
       var done=function(){btn.textContent='Copied';setTimeout(function(){btn.textContent='Copy';},1600);};
-      var fallback=function(){var s=btn.parentNode.querySelector('.mono');var r=document.createRange();r.selectNodeContents(s);var sel=window.getSelection();sel.removeAllRanges();sel.addRange(r);btn.textContent='Selected';setTimeout(function(){btn.textContent='Copy';},1600);};
+      var fallback=function(){var s=btn.previousElementSibling;var r=document.createRange();r.selectNodeContents(s);var sel=window.getSelection();sel.removeAllRanges();sel.addRange(r);btn.textContent='Selected';setTimeout(function(){btn.textContent='Copy';},1600);};
       try{navigator.clipboard.writeText(v).then(done,fallback);}catch(e){fallback();}
     });
   });
